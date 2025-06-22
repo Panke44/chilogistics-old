@@ -1,0 +1,21 @@
+.gallery{
+    margin: 10px 150px;
+    text-align: center;
+}
+.gallery img{
+    width: 350px;    //za sirinu sami biramo kolika ce biti velicina slika na stranici gallery. moze i 150px.
+    padding: 5px;
+    filter: grayscale(0);   //ovaj filter je da slika postane crno-bela
+    transition: 1s;
+}
+.gallery img:hover{
+    filter: grayscale(100%);  //ovde vracamo boju slici
+    transform: scale(1.1);  //ovim slika iskace tj raste na hover
+}
+
+//mediaqueries mobile
+@media(min-width: 220px) and (max-width: 480px){
+    .gallery{
+        margin: 0;
+    }
+}

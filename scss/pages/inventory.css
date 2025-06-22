@@ -1,0 +1,18 @@
+.trucks-hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 128, 128, 0.726))), url(../images/truckspage2.jpg);
+  background: linear-gradient(rgba(128, 128, 128, 0.726)), url(../images/truckspage2.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  padding: 155px 100px;
+}
+
+.trucks-hero p {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-align: center;
+  text-shadow: 2px 2px #fd7d22;
+}
+/*# sourceMappingURL=inventory.css.map */

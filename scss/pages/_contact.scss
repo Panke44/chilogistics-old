@@ -1,0 +1,246 @@
+
+.contact-hero{
+    background-image: url(../images/contactHero.jpg);
+    background-position: center;
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+}
+
+.contact_info{
+    text-align: center;
+    padding: 20px 0;
+    // background-color: $grey2;
+}
+.contact_info h2{
+    color: $grey;
+    padding: 15px 0;
+    text-decoration: underline;
+}
+.contact_info p{
+    padding: 5px 0;
+}
+.contact-span{
+    color: $primary;
+    font-weight: bold;
+}
+
+.map-holder{
+    display: flex;
+    justify-content: center;
+    padding:20px 0 15px; 
+}
+
+.form-input{
+    display: block;
+}
+.form{
+    padding: 0 10px;
+    
+}
+.form p{
+    padding: 5px 0 30px;
+    font-size: 28px;
+    color: $grey;
+}
+.finput{
+    padding: 10px;
+    margin: 15px 0;
+    // background: $grey2;
+    color: $grey;
+    font-size: inherit;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.finput::placeholder{
+    color: $grey;
+}
+.fbtn{
+    padding: 3px 15px;
+    margin-top: 10px;
+    background-color: $primary;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Style the tab content */
+.contact_dep{
+    display: flex;
+    flex-direction: row;
+}
+.tabcontent {
+    // float: left;
+    padding: 10px 2px;
+    border: 1px solid #ccc;
+    width: 50%;
+    border-left: none;
+    border-right: none;
+    height: 200px;
+    // display: none;
+    margin: 0 auto;
+}
+.tabcontent h3{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: $grey;
+}
+.tabcontent p{
+    color: rgb(63, 58, 58);
+    //   font-weight: bold;
+}
+.tabcontent-span{
+    color: $primary;
+    font-weight: bold;
+}
+
+//new style of general contact 
+.contact_container{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $primary;
+}
+.sector_contact{
+    display: flex;
+}
+.sectors_holder{
+    padding: 20px 40px;
+    
+}
+.sectors_holder h2{
+    padding-bottom: 30px;
+    color: $grey;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_wrapper{
+        border-bottom: 1px solid $primary;
+    }
+    .sector_contact{
+        background-color: rgb(236, 231, 231);
+
+    }
+
+    .map-holder{
+        display: flex;
+        justify-content: center;
+        padding:20px 0 15px; 
+    }
+    .googlemap {
+        width: 100%;
+        
+    }
+}
+
+//media queries for tablets
+@media (min-width: 481px) and (max-width: 768px){
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_wrapper{
+        border-bottom: 1px solid $primary;
+    }
+    .sector_contact{
+        background-color: rgb(236, 231, 231);
+        flex-wrap: wrap;
+    }
+
+    .map-holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px 0 15px; 
+    }
+    
+    .googlemap {
+        width: 100vw;
+        height: 300px;
+    }
+}
+
+//media queries for mobile devices
+@media (min-width: 320px) and (max-width: 480px){
+    //hero img
+    .contact-hero{
+        background-image: url(../images/contactHero.jpg);
+        background-position: center;
+        height: 150px;
+        width: 100%;
+    }
+
+
+
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_wrapper{
+        border-bottom: 1px solid $primary;
+    }
+    .sector_contact{
+        background-color: rgb(236, 231, 231);
+        flex-wrap: wrap;
+    }
+
+    //form style and google map
+    .map-holder{
+        display: flex;
+        justify-content: center;
+        padding: 0 8px; 
+    }
+    
+    .form-input{
+        display: block;
+    }
+    .form{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .form p{
+        padding: 5px 0 30px;
+        font-size: 28px;
+        color: $grey;
+    }
+
+    .form textarea{
+        max-width: 300px;
+    }
+    .finput{
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        // background: $grey2;
+        color: $grey;
+        font-size: inherit;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    .finput::placeholder{
+        color: $grey;
+    }
+    .fbtn{
+        padding: 3px 15px;
+        margin-top: 10px;
+        background-color: $primary;
+        border: none;
+        color: white;
+    }
+
+    //form style end
+
+    .map-holder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:20px 0 15px; 
+    }
+    
+    .googlemap {
+        width: 100vw;
+        height: 300px;
+    }
+}

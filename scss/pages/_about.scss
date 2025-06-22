@@ -1,0 +1,388 @@
+//HERO IMG
+.about2-hero{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(255, 166, 0, 0.171)), 
+    url(../images/hero/5.jpg);
+    height: 60vh;
+    background-position: center; 
+    background-size: cover;
+    padding: 155px 100px;
+    background-repeat: no-repeat;
+    text-align: -webkit-right;
+}
+.about2-hero-p{
+    color: white;
+    font-size: 28px;
+    letter-spacing: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 40%;
+}
+
+.first-asection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.we-are{
+    padding: 50px;
+    width: 500px;
+}
+.we-span{
+    color: $primary;
+}
+.we-are h2{
+    font-weight: bold;
+}
+.we-are p{
+    font-size: 18px;
+}
+
+.aboutPhoto{
+    // clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+.stats-container{
+    background-color:  #f5f5f5;
+    padding: 20px;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+}
+.stats-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stats-item img {
+    width: 60px;
+}
+
+.stats-item_value{
+    color: $primary;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+//proba clip path na prazan div bez slike
+.proba-clip{
+    height: 200px;
+    background-color: $primary;
+    clip-path: polygon(100% 0, 0 1%, 50% 60%);
+    text-align: center;
+    padding-top: 30px;
+}
+.proba-clip p{
+    color: white;
+    font-size: 28px;
+}
+.proba-text{
+    max-width: 700px;
+    margin: 0 auto;
+    color: $grey;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+//media queries MOBILE
+@media (min-width: 220px) and (max-width:480px){
+    .about2-hero{
+        background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(255, 166, 0, 0.171)), 
+        url(../images/hero/5.jpg);
+        height: 70vh;
+        background-size: cover;
+        padding: 40px 30px;
+        background-repeat: no-repeat;
+    }
+    .about2-hero-p{
+        color: white;
+        font-size: 22px;
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 100%;
+    }
+    //about
+    .first-asection{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .we-are{
+        padding: 20px;
+        width: 100%;
+    }
+    .we-span{
+        color: $primary;
+    }
+    .we-are h2{
+        font-weight: bold;
+    }
+    
+    .aboutPhoto{
+        clip-path: circle(50% at 50% 50%); //or change 30 to 50%
+        // height: 200px;
+        width: 100%;
+    }
+
+    //stats
+    .stats-container{
+        background-color:  #f5f5f5;
+        padding: 15px;
+    }
+    .stats{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .stats-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .stats-item img {
+        width: 40px;
+    }
+    
+    .stats-item_value{
+        color: $primary;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    //proba clip path 
+    .proba-clip{
+        height: 100%;
+        background-color: $primary;
+        clip-path: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .proba-clip p{
+        color: white;
+        font-size: 28px;
+    }
+    .proba-text{
+        width: 100%;
+        margin: 0 auto;
+        color: $grey;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 20px;
+    }  
+}
+
+//media queries
+@media (min-width: 481px) and (max-width:767px){
+    .about2-hero{
+        background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(255, 166, 0, 0.171)), 
+        url(../images/hero/5.jpg);
+        height: 70vh;
+        background-size: cover;
+        padding: 70px 30px;
+        background-repeat: no-repeat;
+    }
+    .about2-hero-p{
+        color: white;
+        font-size: 22px;
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 100%;
+    }
+    //about
+    .first-asection{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .we-are{
+        padding: 20px;
+        width: 100%;
+    }
+    .we-span{
+        color: $primary;
+    }
+    .we-are h2{
+        font-weight: bold;
+    }
+    
+    .aboutPhoto{
+        // clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        clip-path: circle(50% at 50% 50%);
+        // height: 200px;
+        width: 100%;
+    }
+
+    //stats
+    .stats-container{
+        background-color:  #f5f5f5;
+        padding: 15px;
+    }
+    .stats{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .stats-item{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .stats-item img {
+        width: 40px;
+    }
+    
+    .stats-item_value{
+        color: $primary;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    //proba clip path 
+    .proba-clip{
+        height: 100%;
+        background-color: $primary;
+        clip-path: none;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .proba-clip p{
+        color: white;
+        font-size: 28px;
+    }
+    .proba-text{
+        width: 100%;
+        margin: 0 auto;
+        color: $grey;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 20px;
+    }  
+}
+
+//media queries TABLET
+@media (min-width: 768px) and (max-width:1023px){
+    //HERO IMG
+    .about2-hero{
+        background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(255, 166, 0, 0.171)), 
+        url(../images/hero/5.jpg);
+        height: 400px;
+        background-position: bottom; 
+        background-size: cover;
+        padding: 55px 100px;
+        background-repeat: no-repeat;
+    }
+    .about2-hero-p{
+        color: white;
+        font-size: 28px;
+        letter-spacing: 3px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 50%;
+    }
+
+    .first-asection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .we-are{
+        padding: 0px;
+        width: 100%;
+    }
+    .we-span{
+        color: $primary;
+    }
+    .we-are h2{
+        font-weight: bold;
+    }
+    .our-photo{
+        text-align: center;
+    }
+    .aboutPhoto{
+        // clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        clip-path: circle(50% at 50% 50%);
+        width: 80%;
+    }
+    .stats-container{
+        background-color:  #f5f5f5;
+        padding: 20px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-around;
+    }
+    .stats-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stats-item img {
+        width: 60px;
+    }
+
+    .stats-item_value{
+        color: $primary;
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    //test clip path -ok
+    .proba-clip{
+        height: 150px;
+        background-color: $primary;
+        clip-path: polygon(100% 0, 0 1%, 50% 60%);
+        text-align: center;
+        padding-top: 10px;
+    }
+    .proba-clip p{
+        color: white;
+        font-size: 28px;
+    }
+    .proba-text{
+        max-width: 700px;
+        margin: 0 auto;
+        color: $grey;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1400px){
+    //HERO IMG
+    .about2-hero{
+        background-image: linear-gradient(rgba(128, 128, 128, 0.5), rgba(255, 166, 0, 0.171)), 
+        url(../images/hero/5.jpg);
+        height: 400px;
+        background-position: bottom; 
+        background-size: cover;
+        padding: 155px 100px;
+        background-repeat: no-repeat;
+    }
+    .about2-hero-p{
+        color: white;
+        font-size: 28px;
+        letter-spacing: 3px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 50%;
+    }
+    .aboutPhoto2{
+        width: 100%;
+    }   
+    .we-are{
+        padding: 50px;
+        width: 100%;
+    }  
+    // .aboutPhoto{
+    //     clip-path: circle(50% at 50% 50%);
+    // }
+}

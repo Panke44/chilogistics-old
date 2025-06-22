@@ -1,0 +1,119 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+// tr:nth-child(even) {background-color: $grey2;}
+tr:nth-child(even) {border-bottom: 1px solid black; border-top: 1px solid black;}
+
+.sale-window h2{
+    color: $primary;
+    margin: 40px 0 0 370px;
+}
+
+.sale-holder{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sale-bottom{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sale-agent_p{
+    padding: 5px 0 30px;
+    font-size: 28px;
+    color: $grey;
+}
+.sale-agent_info{
+    padding: 0 30px;
+}
+.sale-price{
+    color: $primary;
+    text-align: end;
+    margin-right: 200px;
+}
+
+.product{
+    display: flex;
+}
+//style of small images
+.product-small-img img{
+    height: 92px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: .6;
+}
+.product-small-img img:hover{
+    opacity: 1;
+}
+
+// .product{
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     position: absolute;
+// }
+.img-container img{
+    height: 500px;
+}
+.product-small-img{
+    float: left;
+}
+.img-container{
+    float: right;
+    padding: 10px;
+}
+.sale-table_holder{
+    width: 30%;
+}
+
+//responsive
+@media (min-width: 220px) and (max-width:768px){
+    .product-small-img{
+        display: flex;
+        float: none;
+        flex-wrap: wrap;
+
+    }
+
+    .sale-table_holder{
+        width: 100%;
+    }
+
+    .sale-price{
+        color: $primary;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .sale-window h2{
+        margin: 0;
+    }
+    // .sale-holder{
+    //     padding: 0;
+    //     justify-content: flex-start;
+    // }
+    .img-container{
+        float: none;
+        text-align: center;
+    }
+    .img-container img{
+        width: 320px;
+        height: auto;
+
+    }
+    .product{
+        flex-direction: column-reverse;
+    }
+}

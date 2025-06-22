@@ -1,0 +1,79 @@
+.trucks-hero{
+    background: linear-gradient(rgba(128, 128, 128, 0.726)), url(../images/truckspage2.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    padding: 155px 100px;
+}
+.trucks-hero p{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 13px;
+    text-align: center;
+    text-shadow: 2px 2px #fd7d22;
+}
+
+ //trucks sale cards
+ .trucks-sale{
+    margin: 30px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.truck-sale{
+    //   height: 650px;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 8px solid $primary;
+    border-radius: 10px;
+    // border: 8px solid;
+    // border-image: linear-gradient(135deg, $primary 0%, $grey 50%, white 90% ) 1;
+    margin-left: 20px;
+    margin-top: 5px;
+
+
+}
+.sale-img{
+    //   width: 320px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sale-img img{
+    width: 320px;
+    margin-top: 15px;
+}
+.truck-price{
+    text-align: center;
+    color: black;
+    padding: 5px;
+    border-bottom: 2px solid $grey;
+    font-size: 28px;
+}
+.truck-info p{
+    padding: 1px 15px;
+    color: black;
+    margin-bottom: 1px;
+}
+.truck-btn{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+}
+.truck-btn button{
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: 5px solid $primary;
+    cursor: pointer;
+}
+
+
+.truck-btn button a{
+    color: $grey;
+}
+.truck-btn button a:hover{
+    color: $primary;
+    text-decoration: none;
+}
